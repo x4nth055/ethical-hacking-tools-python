@@ -1,0 +1,7 @@
+If you have the following error when importing sounddevice:
+
+OSError: PortAudio library not found
+
+Then simply install libportaudio2 on your Linux machine:
+
+$ apt install libportaudio2

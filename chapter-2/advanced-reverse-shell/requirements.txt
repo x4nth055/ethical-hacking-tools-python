@@ -1,0 +1,7 @@
+pyautogui
+sounddevice
+scipy
+psutil
+tabulate
+gputil
+tqdm
