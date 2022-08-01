@@ -1,4 +1,4 @@
-# Code for the Tools & Scripts built in the [Ethical Hacking with Python EBook](https://www.thepythoncode.com/ethical-hacking-with-python-ebook)
+# Tools & Scripts Built in the [Ethical Hacking with Python EBook](https://www.thepythoncode.com/ethical-hacking-with-python-ebook)
 
 The tools and scripts are built in the [Ethical Hacking with Python Ebook](https://www.thepythoncode.com/ethical-hacking-with-python-ebook)
 
