@@ -1,0 +1,1 @@
+python syn_flood.py 192.168.1.1 -p 80

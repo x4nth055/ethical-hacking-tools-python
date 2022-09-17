@@ -7,7 +7,7 @@ try:
 except IndexError:
     ip_address = None
 
-# access token for ipinfo.io
+# access token for ipinfo.io, pur yours here
 access_token = '09d8c3fe6f8ed9'
 # create a client object with the access token
 handler = ipinfo.getHandler(access_token)
