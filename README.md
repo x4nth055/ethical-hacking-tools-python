@@ -48,5 +48,5 @@ The tools and scripts are:
 - [Injecting Code into HTTP Responses](chapter-5/inject-code-onto-http/)
 - [Advanced Network Scanner](chapter-5/advanced-network-scanner/)
 ## Chapter 6: [Extracting Email Addresses from the Web](chapter-6/)
-- [Building a Simple Email Extractor](chapter-5/email-spider/)
-- [Building an Advanced Email Spider](chapter-5/email-spider/)
+- [Building a Simple Email Extractor](chapter-6/email-spider/)
+- [Building an Advanced Email Spider](chapter-6/email-spider/)
