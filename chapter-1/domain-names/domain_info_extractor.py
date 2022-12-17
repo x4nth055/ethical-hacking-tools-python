@@ -1,6 +1,6 @@
 import requests
 import whois
-
+import dns.resolver
 import argparse
 
 
@@ -36,6 +36,22 @@ def get_discovered_subdomains(domain, subdomain_list, timeout=2):
             
     return discovered_subdomains
 
+def resolve_dns_records(target_domain):
+    """A function that resolves DNS records for a `target_domain`"""
+    # List of record types to resolve
+    record_types = ["A", "AAAA", "CNAME", "MX", "NS", "SOA", "TXT"]
+    # Create a DNS resolver
+    resolver = dns.resolver.Resolver()
+    for record_type in record_types:
+        # Perform DNS lookup for the target domain and record type
+        try:
+            answers = resolver.resolve(target_domain, record_type)
+        except dns.resolver.NoAnswer:
+            continue
+        # Print the DNS records found
+        print(f"DNS records for {target_domain} ({record_type}):")
+        for rdata in answers:
+            print(rdata)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Domain name information extractor, uses WHOIS db and scans for subdomains")
@@ -61,7 +77,8 @@ if __name__ == "__main__":
         print("Expiration date:", whois_info.expiration_date)
         # print all other info
         print(whois_info)
-        
+    print("="*50, "DNS records", "="*50)
+    resolve_dns_records(args.domain)
     print("="*50, "Scanning subdomains", "="*50)
     # read all subdomains
     with open(args.subdomains) as file:
