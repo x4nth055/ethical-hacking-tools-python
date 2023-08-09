@@ -23,6 +23,7 @@ The tools and scripts are:
 - [Cracking PDF Files](chapter-3/cracking/pdf-cracker/)
 - [Bruteforcing SSH Servers](chapter-3/cracking/bruteforce-ssh/)
 - [Bruteforcing FTP Servers](chapter-3/cracking/bruteforce-ftp/)
+- [Cryptographic Hashes](chapter-3/cracking/hash-cracker/)
 - [Making a Password Generator](chapter-3/passwordgenerator/)
 ## Chapter 4: [Forensic Investigations](chapter-4/)
 - [Extracting Metadata from Files](chapter-4/extract-metadata-from-files/)
