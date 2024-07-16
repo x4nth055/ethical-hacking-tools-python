@@ -1,0 +1,1 @@
+Run `end_python_processes.py` script if your computer starts to slow down while running one of the scripts. It will kill all Python processes.

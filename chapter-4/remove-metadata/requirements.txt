@@ -1,0 +1,5 @@
+ffmpeg-python
+Pillow
+pikepdf
+tinytag
+python-docx
